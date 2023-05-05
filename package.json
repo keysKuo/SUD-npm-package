@@ -1,6 +1,6 @@
 {
   "name": "sud-libs",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "SUD Tech library",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/keysKuo/SUD-npm-package#readme",
   "dependencies": {
+    "fs-extra": "^11.1.1",
     "node-fetch": "^2.6.9",
     "nodemailer": "^6.9.1",
     "qrcode": "^1.5.3"
