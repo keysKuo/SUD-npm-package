@@ -28,8 +28,8 @@ property of the object. If not, it calls the `callback` function with the `msg` 
 object. If there is an error during the HTTP request, the function also calls the `callback`
 function with the error. The function is marked as `async` and returns a promise that resolves with
 the data or rejects with an error. */
-module.exports.fetchAPI = async (url, options, callback) => {
-    return await fetch(url, options)
+module.exports.callBackend = async (url, options, callback) => {
+    return await fetch('http://localhost:8000/api/' + url, options)
         .then(async result => {
             result = await result.json();
             
